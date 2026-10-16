@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo_550w.svg" alt="550WOS" width="420" />
+  <img src="./logo_550w_black.svg" alt="550WOS" width="420" />
 </p>
 
 <h1 align="center">550WOS</h1>
