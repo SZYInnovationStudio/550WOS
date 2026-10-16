@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="./logo_550w_black.svg" alt="550WOS" width="420" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./logo_550w.svg" />
+    <img src="./logo_550w_black.svg" alt="550WOS" width="420" />
+  </picture>
 </p>
 
 <h1 align="center">550WOS</h1>
