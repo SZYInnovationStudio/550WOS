@@ -1,0 +1,13 @@
+{
+  "name": "550wos-regress",
+  "version": "1.0.0",
+  "private": true,
+  "description": "550WOS 行为回归采集与对比工具（仅开发用）",
+  "scripts": {
+    "capture": "node run.mjs --save baseline",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}

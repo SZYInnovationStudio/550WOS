@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>550WOS</title>
+    <script>
+      (function () {
+        const h = location.hostname;
+        const isLocal = ['localhost', '127.0.0.1', '::1', ''].includes(h);
+        const isNetlify = h.endsWith('.netlify.app');
+        window.redirectUrl =
+          isLocal || isNetlify
+            ? './boot.html'
+            : './boot.html';
+        location.replace(window.redirectUrl);
+      })();
+    </script>
+    <noscript>
+      <meta
+        http-equiv="refresh"
+        content="0; url=./boot.html"
+      />
+    </noscript>
+  </head>
+
+  <body>
+    <p>
+      正在跳转到
+      <a id="redirect-link" href="./boot.html"
+        >./boot.html</a
+      >
+      …
+    </p>
+    <p><a href="./boot.html">如果没有自动跳转，点这里进入本地版本</a></p>
+    <script>
+      const redirectLink = document.getElementById('redirect-link');
+      redirectLink.href = window.redirectUrl;
+      redirectLink.textContent = window.redirectUrl;
+    </script>
+  </body>
+</html>
