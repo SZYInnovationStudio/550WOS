@@ -44,6 +44,8 @@ this.addEventListener('fetch', function (event) {
     }),
   );
 });
+// 缓存清单变更（例如 PWA 清单与图标）时，改动本文件即可让客户端更新 SW：
+// activate 会清掉所有非保护项，下次请求重新从网络拉取。
 const cacheNames = ['550wos'];
 // 更新缓存时需要保留的大体积静态资源（很少变动，重下代价高）。
 //
